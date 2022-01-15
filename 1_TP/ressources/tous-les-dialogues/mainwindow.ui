@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Présentation des principaux dialoques</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdithistorique">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>571</width>
+      <height>441</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEntr_e_sortie_simples">
+    <property name="title">
+     <string>Entrée/sortie simples</string>
+    </property>
+    <addaction name="actionEntrer_un_entier"/>
+    <addaction name="actionEntrer_un_double"/>
+    <addaction name="actionEntrer_un_texte"/>
+    <addaction name="actionEntrer_un_mot_de_passe"/>
+    <addaction name="actionEntrer_un_item_pr_d_fini"/>
+   </widget>
+   <widget class="QMenu" name="menuSur_le_syst_me_de_fichier">
+    <property name="title">
+     <string>sur le système de fichier</string>
+    </property>
+    <addaction name="actionChoisir_un_r_pertoire"/>
+    <addaction name="actionChoisir_un_fichier"/>
+    <addaction name="actionChoisir_un_fichier_contenant_une_image"/>
+   </widget>
+   <widget class="QMenu" name="menuLes_Question_les_Alertes">
+    <property name="title">
+     <string>Les Question, les Alertes</string>
+    </property>
+    <addaction name="actionAvertissement"/>
+    <addaction name="actionInformation"/>
+    <addaction name="actionErreur"/>
+   </widget>
+   <addaction name="menuEntr_e_sortie_simples"/>
+   <addaction name="menuSur_le_syst_me_de_fichier"/>
+   <addaction name="menuLes_Question_les_Alertes"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionEntrer_un_entier">
+   <property name="text">
+    <string>entrer un entier</string>
+   </property>
+  </action>
+  <action name="actionEntrer_un_double">
+   <property name="text">
+    <string>entrer un double</string>
+   </property>
+  </action>
+  <action name="actionEntrer_un_texte">
+   <property name="text">
+    <string>entrer un texte</string>
+   </property>
+  </action>
+  <action name="actionEntrer_un_mot_de_passe">
+   <property name="text">
+    <string>entrer un mot de passe</string>
+   </property>
+  </action>
+  <action name="actionEntrer_un_item_pr_d_fini">
+   <property name="text">
+    <string>entrer un item prédéfini</string>
+   </property>
+  </action>
+  <action name="actionChoisir_un_r_pertoire">
+   <property name="text">
+    <string>choisir un répertoire</string>
+   </property>
+  </action>
+  <action name="actionChoisir_un_fichier">
+   <property name="text">
+    <string>choisir un fichier</string>
+   </property>
+  </action>
+  <action name="actionAvertissement">
+   <property name="text">
+    <string>Avertissement</string>
+   </property>
+  </action>
+  <action name="actionInformation">
+   <property name="text">
+    <string>Demande de réponse</string>
+   </property>
+  </action>
+  <action name="actionErreur">
+   <property name="text">
+    <string>En cas d'erreur</string>
+   </property>
+  </action>
+  <action name="actionChoisir_un_fichier_contenant_une_image">
+   <property name="text">
+    <string>choisir un fichier contenant une image</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
